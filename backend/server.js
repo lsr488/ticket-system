@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended: false}));
 
 // ROOT ROUTE
 app.get('/', (req, res) => {
-	res.status(200).send('Hello');
+	res.status(200).json({message: 'Welcome to the Ticket System API'});
 })
 
 // ROUTES
