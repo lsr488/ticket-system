@@ -99,7 +99,7 @@ const deleteTicket = asyncHandler(async (req, res) => {
 		throw new Error('Not Authorized')
 	}
 
-	await Ticket.remove()
+	await ticket.remove()
 
 	res.status(200).json({success: true});
 })
